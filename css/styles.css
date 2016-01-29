@@ -1,5 +1,40 @@
 body {
   font-size: 10px;
-  font-family: "Poiret One"; }
+  font-family: "VT323";
+  background-color: #fafafa;
+  box-sizing: border-box; }
+
+.title {
+  margin-top: 0;
+  border-bottom: 1px solid #efefef;
+  box-shadow: 0 0 1px 1px #efefef; }
+  .title h1 {
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 1rem;
+    margin-top: 0; }
+
+.controlCenter {
+  margin-bottom: 1rem; }
+  .controlCenter .imgWrapper {
+    height: 50px;
+    width: 59px;
+    display: inline-block;
+    margin-left: 5%; }
+    .controlCenter .imgWrapper img {
+      height: inherit;
+      width: 100%; }
+  .controlCenter ul {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 50%;
+    display: inline-block; }
+    .controlCenter ul li {
+      list-style-type: none;
+      display: inline-block;
+      width: 15%;
+      margin: 2%;
+      font-size: 1.5rem;
+      text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

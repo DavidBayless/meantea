@@ -3,5 +3,6 @@ app.controller('teabagController', [teabagController]);
 
 function teabagController() {
   var vm = this;
-  vm.title = 'Angular Template'
+  // vm.title = 'Angular Template';
+  vm.title = 'Stuff';
 }
