@@ -13,8 +13,10 @@
 
   </div>
   <div class='col-md-3'>
-    <label>Quantity</label>
-    <input type='number' ng-model='num' min='1' max='10' ng-init='num=1'>
-    <button class='btn btn-info' ng-click='TC.teaBag(tea, num)'>Bag It!</button>
+    <form name='quantity'>
+      <label>Quantity</label>
+      <input type='number' ng-model='num' min='1' max='10' ng-init='num=1'>
+      <button class='btn btn-info' ng-click='TC.teaBag(tea, num)' ng-disabled='!quantity.$valid'>Bag It!</button>
+    </form>
   </div>
 </div>

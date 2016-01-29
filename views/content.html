@@ -20,7 +20,7 @@
     <input type='text' ng-model='SC.nameSearch'>
   </div>
   <div class='col-md-2 col-md-offset-2'>
-    <a ng-href='/#/blah'><button class='btn btn-default checkoutBtn'>Bag Out! | Bagging: {{TC.bag.length}} Items</button></a>
+    <a ng-href='/#/blah'><button class='btn btn-default checkoutBtn' ng-disabled='TC.bag.length < 1'>Bag Out! | Bagging: {{TC.bag.length}} Items</button></a>
   </div>
 </div>
 <div class='row'>

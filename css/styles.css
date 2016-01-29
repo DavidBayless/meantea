@@ -102,4 +102,10 @@ body {
       height: inherit;
       border: 1px solid #efefef; }
 
+.align {
+  height: 40rem; }
+  .align div {
+    border: 1px solid #efefef;
+    height: inherit; }
+
 /*# sourceMappingURL=styles.css.map */
