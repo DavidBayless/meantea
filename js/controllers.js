@@ -1,7 +1,7 @@
-app.controller('TemplateController', [TemplateController]);
+app.controller('teabagController', [teabagController]);
 // Change Me
 
-function TemplateController() {
+function teabagController() {
   var vm = this;
   vm.title = 'Angular Template'
 }
