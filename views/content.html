@@ -1,0 +1,65 @@
+<div class='row inputRow'>
+  <div class='col-md-3 col-md-offset-1 categoryInput'>
+    <label for='categories'>Search By Category</label>
+    <select name='categories' ng-model='SC.category'>
+      <option value=''></option>
+      <option value='awesome'>Awesome</option>
+      <option value='cold'>Cold</option>
+      <option value='dark'>Dark</option>
+      <option value='dry'>Dry</option>
+      <option value='hot'>Hot</option>
+      <option value='lucid'>Lucid</option>
+      <option value='spring'>Spring</option>
+      <option value='summer'>Summer</option>
+      <option value='warm'>Warm</option>
+      <option value='winter'>Winter</option>
+    </select>
+  </div>
+  <div class='col-md-3 nameInput'>
+    <label>Search By Name: </label>
+    <input type='text' ng-model='SC.nameSearch'>
+  </div>
+  <div class='col-md-2 col-md-offset-2'>
+    <a ng-href='/#/blah'><button class='btn btn-default checkoutBtn'>Bag Out! | Bagging: {{TC.bag.length}} Items</button></a>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-md-10 col-md-offset-1 tableRow'>
+    <div class='row labelRow'>
+      <div class='col-md-4'>
+        <p>Tea</p>
+      </div>
+      <div class='col-md-5'>
+        <p>Information</p>
+      </div>
+      <div class='col-md-3'>
+        <label>Sort By Price: </label>
+        <select ng-model='SC.priceOrder'>
+          <option value=''></option>
+          <option value='price'>Lowest</option>
+          <option value='-price'>Highest</option>
+        </select>
+      </div>
+    </div>
+    <div class='row teaRow' ng-repeat='tea in TC.teaCollection | filter:SC.category | filter:SC.nameSearch | orderBy:SC.priceOrder'>
+      <div class='col-md-4 imgContainer'>
+        <img src='{{tea.imageUrl}}'>
+      </div>
+      <div class='col-md-5'>
+        <h3>{{tea.name}}</h3>
+        <h5>Price: {{tea.price/100 | currency}}</h5>
+        <h5>Rating: {{tea.rating}}</h5>
+        <h5>Ingredients: {{tea.ingredients}}</h5>
+        <h5>Caffeine Content: {{tea.caffeineScale}} mg/serving</h5>
+        <h5>Categories: </h5>
+        <span ng-repeat='category in tea.categories'> {{category}} </span>
+
+      </div>
+      <div class='col-md-3'>
+        <label>Quantity</label>
+        <input type='number' ng-model='TC.bagItem.num'>
+        <button class='btn btn-info' ng-click=''>Bag It!</button>
+      </div>
+    </div>
+  </div>
+</div>

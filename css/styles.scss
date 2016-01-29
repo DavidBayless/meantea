@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 10px;
   font-family: "VT323";
-  background-color: #fafafa;
   box-sizing: border-box;
 }
 
@@ -9,12 +12,29 @@ body {
   margin-top: 0;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 1px 1px #efefef;
+  margin-bottom: 5rem;
 
   h1 {
     text-align: center;
     font-variant: small-caps;
     margin-bottom: 1rem;
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 5rem;
+    text-shadow: 1px 1px #212121;
+  }
+}
+
+.imgIcon {
+  height: 7.5rem;
+  width: 12.5rem;
+
+  img {
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
   }
 }
 
@@ -23,7 +43,7 @@ body {
 
   .imgWrapper {
     height: 50px;
-    width: 59px;
+    width: 50px;
     display: inline-block;
     margin-left: 5%;
 
@@ -38,6 +58,7 @@ body {
     margin-right: 3%;
     width: 50%;
     display: inline-block;
+
     li {
     list-style-type: none;
     display: inline-block;
@@ -46,5 +67,70 @@ body {
     font-size: 1.5rem;
     text-align: center;
     }
+  }
+}
+
+.inputRow {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+
+  .categoryInput {
+    text-align: center;
+    height: 2.5rem;
+
+    select {
+      width: 60%;
+      line-height: inherit;
+      height: inherit;
+
+      option {
+        line-height: inherit;
+        height: inherit;
+      }
+    }
+  }
+
+  .nameInput {
+    text-align: center;
+
+    input {
+      width: 60%;
+      line-height: inherit;
+      height: inherit;
+    }
+  }
+
+  .checkoutBtn {
+    background-color: #3afea1;
+    line-height: inherit;
+    height: inherit;
+  }
+}
+
+.tableRow {
+  border: 1px solid #efefef;
+  box-shadow: -1px -1px 2px 2px #ababab;
+
+  .labelRow {
+    border-bottom: 1px solid #efefef;
+
+    div {
+      font-size: 1.5rem;
+      border: 1px solid #efefef;
+      height: 3rem;
+    }
+  }
+  .imgContainer {
+    height: 25rem;
+    border: 1px solid #efefef;
+
+    img {
+      height: inherit;
+      width: 100%;
+    }
+  }
+
+  .teaRow {
+    border-bottom: 1px solid #efefef;
   }
 }
