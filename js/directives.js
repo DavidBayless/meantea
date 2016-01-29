@@ -1,7 +1,15 @@
-app.directive('teaItem', [pokemonDirective]);
+app.directive('teaItem', [teaDirective]);
 
-function pokemonDirective() {
+function teaDirective() {
   return {
-    templateUrl: '../views/pokemon.html'
+    templateUrl: '../views/teaItem.html'
+  };
+}
+
+app.directive('bagOut', [bagDirective]);
+
+function bagDirective() {
+  return {
+    templateUrl: '../views/checkoutItem.html'
   };
 }

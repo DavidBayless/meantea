@@ -7,6 +7,7 @@ body {
   box-sizing: border-box; }
 
 .title {
+  text-align: center;
   margin-top: 0;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 1px 1px #efefef;
@@ -22,8 +23,9 @@ body {
     text-shadow: 1px 1px #212121; }
 
 .imgIcon {
+  text-align: center;
   height: 7.5rem;
-  width: 12.5rem; }
+  width: 14.5rem; }
   .imgIcon img {
     height: inherit;
     width: 100%;
@@ -79,7 +81,8 @@ body {
 
 .tableRow {
   border: 1px solid #efefef;
-  box-shadow: -1px -1px 2px 2px #ababab; }
+  box-shadow: 0 0 2px 2px #ababab;
+  margin-bottom: 10rem; }
   .tableRow .labelRow {
     border-bottom: 1px solid #efefef; }
     .tableRow .labelRow div {
@@ -93,6 +96,10 @@ body {
       height: inherit;
       width: 100%; }
   .tableRow .teaRow {
-    border-bottom: 1px solid #efefef; }
+    border-bottom: 1px solid #efefef;
+    height: 25rem; }
+    .tableRow .teaRow div {
+      height: inherit;
+      border: 1px solid #efefef; }
 
 /*# sourceMappingURL=styles.css.map */

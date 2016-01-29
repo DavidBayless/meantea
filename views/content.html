@@ -41,25 +41,6 @@
         </select>
       </div>
     </div>
-    <div class='row teaRow' ng-repeat='tea in TC.teaCollection | filter:SC.category | filter:SC.nameSearch | orderBy:SC.priceOrder'>
-      <div class='col-md-4 imgContainer'>
-        <img src='{{tea.imageUrl}}'>
-      </div>
-      <div class='col-md-5'>
-        <h3>{{tea.name}}</h3>
-        <h5>Price: {{tea.price/100 | currency}}</h5>
-        <h5>Rating: {{tea.rating}}</h5>
-        <h5>Ingredients: {{tea.ingredients}}</h5>
-        <h5>Caffeine Content: {{tea.caffeineScale}} mg/serving</h5>
-        <h5>Categories: </h5>
-        <span ng-repeat='category in tea.categories'> {{category}} </span>
-
-      </div>
-      <div class='col-md-3'>
-        <label>Quantity</label>
-        <input type='number' ng-model='TC.bagItem.num'>
-        <button class='btn btn-info' ng-click=''>Bag It!</button>
-      </div>
-    </div>
+    <tea-item ng-repeat='tea in TC.teaCollection | filter:SC.category | filter:SC.nameSearch | orderBy:SC.priceOrder'></tea-item>
   </div>
 </div>

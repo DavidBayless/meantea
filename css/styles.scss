@@ -9,6 +9,7 @@ body {
 }
 
 .title {
+  text-align: center;
   margin-top: 0;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 1px 1px #efefef;
@@ -27,8 +28,9 @@ body {
 }
 
 .imgIcon {
+  text-align: center;
   height: 7.5rem;
-  width: 12.5rem;
+  width: 14.5rem;
 
   img {
     height: inherit;
@@ -109,7 +111,8 @@ body {
 
 .tableRow {
   border: 1px solid #efefef;
-  box-shadow: -1px -1px 2px 2px #ababab;
+  box-shadow: 0 0 2px 2px #ababab;
+  margin-bottom: 10rem;
 
   .labelRow {
     border-bottom: 1px solid #efefef;
@@ -132,5 +135,11 @@ body {
 
   .teaRow {
     border-bottom: 1px solid #efefef;
+    height: 25rem;
+
+    div {
+      height: inherit;
+      border: 1px solid #efefef;
+    }
   }
 }
