@@ -1,2 +1,22 @@
-<h1>Hello World</h1>
+<a ng-href='/#/'><button class='btn btn-success right'>Shop More!</button></a>
+<div class='row' ng-show='TC.bag.length > 0'>
+  <div class='col-md-10 col-md-offset-1'>
+    <div class='row headerRow'>
+      <div class='col-md-7'>
+        <h6>Product</h6>
+      </div>
+      <div class='col-md-1'>
+        <h6>Quantity</h6>
+      </div>
+      <div class='col-md-1'>
+        <h6>Sub-total</h6>
+      </div>
+      <span class='col-md-3'>
+        <h5>Order Total: {{TC.total/100 | currency}}</h5>
+      </span>
+    </div>
+  </div>
+</div>
 <bag-out ng-repeat='baggedItem in TC.bag'></bag-out>
+
+<h1 ng-show='TC.bag.length < 1'>Uh Oh! It doesn't look like you have anything in your bag!</h1>

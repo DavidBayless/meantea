@@ -102,10 +102,23 @@ body {
       height: inherit;
       border: 1px solid #efefef; }
 
+.headerRow div {
+  border-left: 2px solid #efefef;
+  border-top: 2px solid #efefef;
+  border-right: 2px solid #efefef; }
+
 .align {
   height: 40rem; }
   .align div {
     border: 1px solid #efefef;
     height: inherit; }
+    .align div button {
+      margin-top: 2rem;
+      margin-left: 1rem; }
+      .align div button :nth-child(odd) {
+        margin-left: 3rem; }
+
+.right {
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */

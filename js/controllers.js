@@ -8,6 +8,8 @@ function teabagController(dataService) {
   vm.teaCollection = dataService;
   vm.bag = [];
   vm.bagItem = {};
+  vm.total = 0;
+  vm.subTotals = [];
 
   vm.teaBag = function(item, num) {
     var counter = 0;
@@ -21,6 +23,23 @@ function teabagController(dataService) {
     if (counter === 0) {
       vm.bag.push(item);
     }
+    vm.subTotals[vm.bag.indexOf(item) - 1].num * vm.bag[vm.bag.length - 1].num
+
+  };
+
+  vm.unbag = function(item) {
+    console.log(vm.bag.indexOf(item));
+    vm.bag.splice(vm.bag.indexOf(item), 1);
+  };
+
+  vm.editChecker = function(num) {
+    if (num <=0 || num > 10) {
+      num = 1;
+    }
+  };
+
+  vm.sumTotal = function(obj) {
+    vm.total += (obj.price * obj.num);
   };
 }
 
