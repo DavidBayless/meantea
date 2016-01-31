@@ -17,13 +17,14 @@ function teabagController(dataService) {
     for (var i = 0; i < vm.bag.length; i++) {
       if (vm.bag[i].name == item.name) {
         vm.bag[i].num = num;
+        vm.subTotals[i] = item.price * item.num;
         counter++;
       }
     }
     if (counter === 0) {
       vm.bag.push(item);
+      vm.subTotals.push(item.price * item.num);
     }
-    vm.subTotals[vm.bag.indexOf(item) - 1].num * vm.bag[vm.bag.length - 1].num
 
   };
 
